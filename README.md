@@ -16,7 +16,7 @@ tts --text "$(cat path_to_text_file.txt)" --model_name "tts_models/multilingual/
 
 pip install autocorrect==2.6.1
 
-ffmpeg -i chapter7.wav -acodec libmp3lame -qscale 2 chapter7_new.mp3
+ffmpeg -i chapter7.wav -acodec libmp3lame -qscale 2 -af "atempo=1.2" chapter7_new.mp3
 
 
 ```
